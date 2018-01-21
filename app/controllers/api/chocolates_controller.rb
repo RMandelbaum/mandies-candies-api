@@ -22,13 +22,13 @@ class Api::ChocolatesController < ApplicationController
    if @chocolate.update(chocolate_params)
      render json: @chocolate
    else
-     render json: { message: chocolate.errors}, status 400
+     render json: { message: chocolate.errors}, status: 400
    end
  end
 
  def destroy
    if @chocolate.destroy
-     status: 204
+     render json: { message: 'Successfully Removed Item' }, status: 204
    else
      render json: { message: 'Unable to Delete'}, status: 400
    end

@@ -1,0 +1,10 @@
+Mandies Candies
+
+Chocolate Model
+  chocolate_type: white, dark, milk, assorted
+  price: integer
+  piece count: 5 or less, 5-15, 15-25, 25-50, 50 or more
+  git_wrapped: boolean
+  img_url
+
+//optional candy model??
